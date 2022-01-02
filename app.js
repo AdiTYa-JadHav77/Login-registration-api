@@ -5,8 +5,8 @@ const routes=require("./Routes/index");
 
 const app=express();
 
-const host="localhost";
-const port=2021;
+const host = '0.0.0.0' || 'localhost';
+const port=process.env.PORT ||2021;
 
 // app.use(cors());
 // app.options("*",cors())
