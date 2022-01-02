@@ -8,8 +8,8 @@ const app=express();
 const host = '0.0.0.0' || 'localhost';
 const port=process.env.PORT ||2021;
 
-app.use(cors());
-app.options("*",cors())
+// app.use(cors());
+// app.options("*",cors())
 
 app.use(express.json())
 app.use('/',routes);
